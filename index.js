@@ -8,6 +8,6 @@ router.get("/", (req, res) => {
 });
 
 app.use("/", router);
-app.listen(() => {
-  console.log("Ouvindo servidor.");
-}, 3000);
+app.listen(3000, "localhost", () =>{
+    console.log("Listening in the door")
+})
