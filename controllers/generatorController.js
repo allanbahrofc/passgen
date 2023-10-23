@@ -4,4 +4,4 @@ let generatorBehavior = (len, type) => {
   return pass;
 };
 
-module.exports = generatorBehavior;
+module.exports = generatorBehavior();
