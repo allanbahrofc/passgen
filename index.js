@@ -4,10 +4,10 @@ const app = express();
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.send("Olá mundo");
+  res.sendFile(path.resolve(path.join(path.dirname("./") + "/views/index.html")));
 });
 
 app.use("/", router);
-app.listen(3000, "localhost", () =>{
-    console.log("Listening in the door")
-})
+app.listen(3000, "localhost", () => {
+  console.log("Listening in the door");
+});
