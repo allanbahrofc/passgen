@@ -12,6 +12,9 @@ router.post("/", (req, res) => {
   res.send("Postei porra");
 });
 
+app.use(
+  express.static(path.resolve(path.join(path.dirname("./") + "/public")))
+);
 app.use("/", router);
 app.listen(3000, "localhost", () => {
   console.log("Listening in the door");
