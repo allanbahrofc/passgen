@@ -37,6 +37,10 @@ form {
   background-color: var(--black-color-v1);
   border: 1px solid var(--gray-color-v1);
   color: var(--gray-color-v2);
-  padding: 10px;
+  padding: 12px;
   margin: 10px;
+}
+.btn-passgen:hover{
+  background-color: var(--gray-color-v1);
+  cursor: pointer;
 }

@@ -9,13 +9,33 @@
   </head>
   <body>
     <main class="main-passgen">
-      <form class="form-passgen" method="post">
+      <form id="frm" class="form-passgen" method="post">
         <h2 class="title-passgen">PASSGEN</h2>
-        <input class="input-passgen" type="text" placeholder="Password">
+        <input
+          class="input-passgen"
+          readonly
+          type="text"
+          placeholder="Password"
+        />
         <section>
-          <input class="btn-passgen" type="button" value="Generate">
-          <input class="btn-passgen" type="button" value="Save">
-          <input class="btn-passgen" type="button" value="Options">
+          <input
+            class="btn-passgen"
+            type="submit"
+            value="Generate"
+            formaction="/generate"
+          />
+          <input
+            class="btn-passgen"
+            type="submit"
+            value="Save"
+            formaction="/save"
+          />
+          <input
+            class="btn-passgen"
+            type="submit"
+            value="Options"
+            formaction="/options"
+          />
         </section>
       </form>
     </main>

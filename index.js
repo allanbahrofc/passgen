@@ -8,7 +8,14 @@ router.get("/", (req, res) => {
     path.resolve(path.join(path.dirname("./") + "/pages/index.html"))
   );
 });
-router.post("/", (req, res) => {
+router.post("/generate", (req, res) => {
+  res.send("Postei porra");
+});
+
+router.post("/save", (req, res) => {
+  res.send("Postei porra");
+});
+router.post("/options", (req, res) => {
   res.send("Postei porra");
 });
 
